@@ -34,7 +34,8 @@ def main():
         print("1. Добавить заметку")
         print("2. Редактировать заметку")
         print("3. Удалить заметку")
-        print("4. Выйти")
+        print("4. Список всех заметок")
+        print("5. Выйти")
         choice = input("Введите номер действия: ")
         if choice == "1":
             add_note()
@@ -43,6 +44,8 @@ def main():
         elif choice == "3":
             delete_note()
         elif choice == "4":
+            print_notes()
+        elif choice == "5":
             break
         else:
             print("Некорректный ввод. Попробуйте еще раз.")
